@@ -43,6 +43,14 @@
                                 </AxisY>
                             </asp:ChartArea>
                         </ChartAreas>
+                    </asp:Chart>
+                     <asp:Chart ID="LetterFrequencyChart" runat="server" Width="1000px" >
+                        <ChartAreas>
+                            <asp:ChartArea Name="MainChartArea">
+                                <AxisY Crossing="Min">
+                                </AxisY>
+                            </asp:ChartArea>
+                        </ChartAreas>
                     </asp:Chart>>
                 </div>
             </article>

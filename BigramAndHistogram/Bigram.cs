@@ -69,5 +69,27 @@ namespace BigramAndHistogram
 
             return bigrams;
         }
+
+        public Dictionary<char, int> LetterFrequency(string input)
+        {
+            Dictionary<char, int> letterCounts = new Dictionary<char, int>();
+
+            for(char c = 'a'; c <= 'z'; c++)
+            {
+                int count = 0;
+
+                foreach(char ch in input)
+                {
+                 if(ch == c)
+                    {
+                        count += 1;
+                    }
+                }
+
+                letterCounts.Add(c, count);
+            }
+
+            return letterCounts;
+        }
     }
 }
