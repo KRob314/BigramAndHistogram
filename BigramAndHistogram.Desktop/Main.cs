@@ -15,7 +15,7 @@ namespace BigramAndHistogram.Desktop
         {
             InitializeComponent();
             _settings = new BigramSettings();
-            lblOutput.Text = "";
+            txtOutput.Text = "";
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -24,7 +24,10 @@ namespace BigramAndHistogram.Desktop
             var words = bigramService.SplitWords(txtInput.Text);
             List<Bigram> bigrams = bigramService.GetSequence(words);
 
-            lblOutput.Text = string.Format("Input length: {0} \nWords Length {1}\n {2}", txtInput.Text.Length, words.Length, bigramService.GetOutput(bigrams));
+            //string output = bigramService.GetOutput(bigrams);
+            txtOutput.Text = string.Format("Input length: {0} {3}Words length: {1} {3}{2}", txtInput.Text.Length, words.Length, bigramService.GetOutput(bigrams), Environment.NewLine);
+           
+
 
             if (_settings.ShowBigramGraph == true)
             {

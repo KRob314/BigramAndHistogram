@@ -31,9 +31,9 @@
             this.txtInput = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.lblOutput = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
+            this.txtOutput = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -45,6 +45,7 @@
             // 
             this.txtInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtInput.Location = new System.Drawing.Point(0, 0);
+            this.txtInput.MaxLength = 50000;
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
             this.txtInput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -80,20 +81,10 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.AutoScroll = true;
-            this.splitContainer1.Panel2.Controls.Add(this.lblOutput);
+            this.splitContainer1.Panel2.Controls.Add(this.txtOutput);
             this.splitContainer1.Size = new System.Drawing.Size(827, 411);
             this.splitContainer1.SplitterDistance = 512;
             this.splitContainer1.TabIndex = 3;
-            // 
-            // lblOutput
-            // 
-            this.lblOutput.AutoSize = true;
-            this.lblOutput.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblOutput.Location = new System.Drawing.Point(0, 0);
-            this.lblOutput.Name = "lblOutput";
-            this.lblOutput.Size = new System.Drawing.Size(35, 13);
-            this.lblOutput.TabIndex = 0;
-            this.lblOutput.Text = "label2";
             // 
             // panel1
             // 
@@ -115,6 +106,19 @@
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
             this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            // 
+            // txtOutput
+            // 
+            this.txtOutput.AcceptsReturn = true;
+            this.txtOutput.AcceptsTab = true;
+            this.txtOutput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtOutput.Location = new System.Drawing.Point(0, 0);
+            this.txtOutput.Multiline = true;
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.ReadOnly = true;
+            this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtOutput.Size = new System.Drawing.Size(311, 411);
+            this.txtOutput.TabIndex = 1;
             // 
             // Main
             // 
@@ -140,9 +144,9 @@
         private System.Windows.Forms.TextBox txtInput;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.TextBox txtOutput;
     }
 }
 
