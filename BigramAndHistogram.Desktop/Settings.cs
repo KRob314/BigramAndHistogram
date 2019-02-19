@@ -62,5 +62,13 @@ namespace BigramAndHistogram.Desktop
             cbOrderList.Checked = bigramSetting.OrderList;
 
         }
+
+        private void cbLetterFrequency_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbLetterFrequency.Checked == true)
+                bigramSetting.ShowLetterFrequency = true;
+            else
+                bigramSetting.ShowLetterFrequency = false;
+        }
     }
 }

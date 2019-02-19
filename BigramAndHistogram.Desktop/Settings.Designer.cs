@@ -33,6 +33,7 @@
             this.cbNumbers = new System.Windows.Forms.CheckBox();
             this.cbShowChart = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbLetterFrequency = new System.Windows.Forms.CheckBox();
             this.cbOrderList = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -55,7 +56,7 @@
             this.groupBox1.Controls.Add(this.cbPunctuation);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 175);
+            this.groupBox1.Size = new System.Drawing.Size(200, 107);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filters";
@@ -84,19 +85,31 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cbLetterFrequency);
             this.groupBox3.Controls.Add(this.cbOrderList);
             this.groupBox3.Controls.Add(this.cbShowChart);
             this.groupBox3.Location = new System.Drawing.Point(244, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 175);
+            this.groupBox3.Size = new System.Drawing.Size(200, 107);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Other";
             // 
+            // cbLetterFrequency
+            // 
+            this.cbLetterFrequency.AutoSize = true;
+            this.cbLetterFrequency.Location = new System.Drawing.Point(6, 52);
+            this.cbLetterFrequency.Name = "cbLetterFrequency";
+            this.cbLetterFrequency.Size = new System.Drawing.Size(106, 17);
+            this.cbLetterFrequency.TabIndex = 4;
+            this.cbLetterFrequency.Text = "Letter Frequency";
+            this.cbLetterFrequency.UseVisualStyleBackColor = true;
+            this.cbLetterFrequency.CheckedChanged += new System.EventHandler(this.cbLetterFrequency_CheckedChanged);
+            // 
             // cbOrderList
             // 
             this.cbOrderList.AutoSize = true;
-            this.cbOrderList.Location = new System.Drawing.Point(6, 52);
+            this.cbOrderList.Location = new System.Drawing.Point(6, 75);
             this.cbOrderList.Name = "cbOrderList";
             this.cbOrderList.Size = new System.Drawing.Size(106, 17);
             this.cbOrderList.TabIndex = 3;
@@ -108,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 277);
+            this.ClientSize = new System.Drawing.Size(466, 149);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Name = "Settings";
@@ -129,5 +142,6 @@
         private System.Windows.Forms.CheckBox cbShowChart;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox cbOrderList;
+        private System.Windows.Forms.CheckBox cbLetterFrequency;
     }
 }

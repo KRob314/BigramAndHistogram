@@ -43,7 +43,7 @@
             this.BigramChart.Legends.Add(legend1);
             this.BigramChart.Location = new System.Drawing.Point(0, 0);
             this.BigramChart.Name = "BigramChart";
-            this.BigramChart.Size = new System.Drawing.Size(1353, 697);
+            this.BigramChart.Size = new System.Drawing.Size(988, 449);
             this.BigramChart.TabIndex = 2;
             this.BigramChart.Text = "chart1";
             // 
@@ -51,7 +51,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1353, 697);
+            this.ClientSize = new System.Drawing.Size(988, 449);
             this.Controls.Add(this.BigramChart);
             this.Name = "GraphForm";
             this.Text = "GraphForm";

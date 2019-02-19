@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -11,6 +12,6 @@ namespace BigramAndHistogram.Services
     {
         string GetOutput(List<Bigram> bigrams);
         string[] SplitWords(string input);
-        List<Bigram> GetSequence(string[] words);
+        List<Bigram> GetSequence(string[] words, BackgroundWorker worker);
     }
 }
